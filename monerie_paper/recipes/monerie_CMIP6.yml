@@ -1,0 +1,399 @@
+---
+
+
+documentation:
+  title: title
+  description: |
+    descr
+  authors:
+    - cos_josep
+
+
+datasets_Amon: &dAmon
+- dataset: EC-Earth3
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: GISS-E2-1-G
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: GISS-E2-1-H
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MCM-UA-1-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MPI-ESM1-2-HR
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-ESM2-1
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: CNRM-CM6-1
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: IPSL-CM6A-LR
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: ACCESS-CM2
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+  supplementary_variables:
+    - short_name: areacella
+      skip: true
+- dataset: CESM2
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2-WACCM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CAMS-CSM1-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: IITM-ESM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-ESM2
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-CM2-SR5
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: TaiESM1
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: E3SM-1-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: MPI-ESM1-2-LR
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CAS-ESM2-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: FGOALS-g3
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: INM-CM5-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: INM-CM4-8
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MRI-ESM2-0
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-LM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-MM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-ESM1-5
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+  supplementary_variables:
+    - short_name: areacella
+      skip: true
+- dataset: BCC-CSM2-MR
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NESM3
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CanESM5
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-LL
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+  supplementary_variables:
+    - short_name: areacella
+      skip: true
+- dataset: UKESM1-0-LL
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+  supplementary_variables:
+    - short_name: areacella
+      skip: true
+- dataset: HadGEM3-GC31-MM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+  supplementary_variables:
+    - short_name: areacella
+      skip: true
+- dataset: KACE-1-0-G
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: MIROC-ES2L
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MIROC6
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CIESM
+  ensemble: "*"
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+
+preprocessors:
+  general_preproc: &general_preproc
+    custom_order: true
+    extract_season:
+      season: jas
+    seasonal_statistics:
+      operator: mean
+      seasons: ['jas']
+    anomalies:
+      period: full
+      reference:
+        start_year: 1960
+        start_month: 01
+        start_day: 01
+        end_year: 1999
+        end_month: 12
+        end_day: 31
+    extract_time:
+      start_year: 2060
+      start_month: 01
+      start_day: 01
+      end_year: 2099
+      end_month: 12
+      end_day: 31
+  Amon_regrid: &Amon_regrid
+    regrid:
+      scheme:
+        reference: esmf_regrid.schemes:ESMFAreaWeighted
+      target_grid: 2.5x2.5
+
+  EUM:
+    custom_order: true
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_region:
+      start_latitude: -30
+      end_latitude: 50
+      start_longitude: 0
+      end_longitude: 40
+    area_statistics:
+      operator: mean
+    ensemble_statistics:
+      statistics: ["mean"]
+
+  NAW:
+    custom_order: true
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_region:
+      start_latitude: 20
+      end_latitude: 60
+      start_longitude: 300
+      end_longitude: 361
+    area_statistics:
+      operator: mean
+    ensemble_statistics:
+      statistics: ["mean"]
+
+  PR:
+    custom_order: true
+    <<: *general_preproc
+    <<: *Amon_regrid
+    ensemble_statistics:
+      statistics: ["mean"]
+
+  GW:
+    custom_order: true
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_region:
+      start_latitude: -90
+      end_latitude: 90
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+    ensemble_statistics:
+      statistics: ["mean"]
+
+
+diagnostics:
+  storyline_analysis:
+    variables:
+      gw:
+        short_name: tas
+        mip: Amon
+        start_year: &start_year 1960
+        end_year: &end_year 2099
+        preprocessor: GW
+        additional_datasets: *dAmon
+      naw:
+        short_name: tas
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: NAW
+        additional_datasets: *dAmon
+      eum:
+        short_name: tas
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: EUM
+        additional_datasets: *dAmon
+      pr:
+        short_name: pr
+        mip: Amon
+        preprocessor: PR
+        project: CMIP6
+        start_year: *start_year
+        end_year: *end_year
+        additional_datasets: *dAmon
+
+    scripts:
+      remote_drivers:
+         script: /climca/people/storylinetool/zappa_shepherd_paper/scripts/remote_drivers.py
+      multiple_regresion:
+        script: /climca/people/storylinetool/zappa_shepherd_paper/scripts/multiple_linear_regression.py
+
